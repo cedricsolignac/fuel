@@ -1,5 +1,5 @@
 //on declare le contrat
-// langae sway copy de Rust
+// language sway copy de Rust
 contract;
 
 //les standards utilisable
@@ -32,7 +32,7 @@ abi MoneyBox {
     fn deposit();
 
     #[storage(write, read)]
-    fn witdraw(asset_id: ContractId, amount: u64);
+    fn withdraw(asset_id: ContractId, amount: u64);
 
     #[storage(read)]
     fn balance(address: Address, asset_id: ContractId) -> u64;
